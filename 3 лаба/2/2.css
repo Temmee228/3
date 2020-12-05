@@ -1,0 +1,166 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.6;
+	box-sizing: border-box;
+}
+
+#content{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+
+/*header*/
+header{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+select{
+	width: 400px;
+	margin: 10px;
+	padding: 5px;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee;
+	border-radius: 5px;
+	transition: padding .55s;
+	
+}
+input{
+	display: block;
+	float: right;
+	margin: 10px;
+	padding: 5px;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee;
+	border-radius: 5px;
+	transition: padding .55s;
+
+}
+button{
+	display:block;
+	float: right;
+	margin: 10px;
+	padding: 5px;
+	margin-right: 20px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee;
+	background: #eee;
+}
+.shapka{
+	height: 300px;
+	border: 1px solid black;
+	background: url(2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 300px;
+	margin-top: 20px;
+}
+select:hover {
+	cursor: pointer;
+}
+input:focus{
+	padding-right: 70px;
+}
+
+/*content_sod*/
+hr{
+	width: 90%;
+	margin-left: 50px;
+}
+.sector_1{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	grid-auto-rows: 200px;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.sector_1 div , .sector_2 div{
+	border: 1px solid black;
+}
+
+.sector_2{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	grid-auto-rows: 150px;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.content_okno_main{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed; 
+	top:0;
+	left:0;
+	z-index: 1;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	margin: 0 auto;
+}
+.content_okno_1{
+	width: 400px;
+	height: 300px;
+	background: white;
+	margin: 0 auto;
+	margin-top:200px;
+}
+.content_okno_1 h1{
+	float: left;
+}
+.content_okno_1 span{
+	float: right;
+	margin-right: 20px;
+}
+#close{
+	color: #aaa;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: auto;
+}
+#close:hover,
+#close:focus{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+/*divise*/
+
+@media (max-width: 360px){
+	*{
+		margin: 0;
+	}
+	#content, header{
+		width: 100%;
+		margin:0;
+	}
+	select, input{
+		width: 100px;
+		height: 30px;
+	}
+	button{
+		padding: 3px;
+	}
+	
+	input:hover{
+		padding: 0;
+	}
+	hr{
+		width: 80%;
+	}
+	.sector_1, .sector_2{
+		display: block;
+	}
+	.sector_1 div, .sector_2 div{
+		height: 200px;
+		margin-top: 10px;
+	}
+
+}
