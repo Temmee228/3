@@ -21,7 +21,7 @@ header{
 }
 select{
 	width: 400px;
-	margin: 10px;
+	margin: auto;
 	padding: 5px;
 	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee;
 	border-radius: 5px;
@@ -31,7 +31,7 @@ select{
 input{
 	display: block;
 	float: right;
-	margin: 10px;
+	margin: auto;
 	padding: 5px;
 	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee;
 	border-radius: 5px;
@@ -41,7 +41,7 @@ input{
 button{
 	display:block;
 	float: right;
-	margin: 10px;
+	margin: auto;
 	padding: 5px;
 	margin-right: 20px;
 	border-radius: 3px;
@@ -59,9 +59,7 @@ button{
 select:hover {
 	cursor: pointer;
 }
-input:focus{
-	padding-right: 70px;
-}
+
 
 /*content_sod*/
 hr{
